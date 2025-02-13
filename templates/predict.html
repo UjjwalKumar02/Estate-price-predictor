@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Estate Price</title>
+</head>
+
+<body class="bg-[#171717]">
+
+  <form
+  action="{{url_for('predict')}}"
+  method="post"
+  class="bg-[#f5f5f7] px-20 py-14 space-y-2 w-[36%] mx-auto rounded-lg text-lg"
+  >
+
+    <p class='text-3xl font-semibold text-center mb-10'>Delhi Estate Price Predictor</p>
+    <div class="flex gap-10 justify-between">
+      <label for="Area">Area</label>
+      <input type="text" name="Area" id="Area">
+    </div>
+
+    <div class="flex gap-10 justify-between">
+      <label for="Location">Location</label>
+      <input type="text" name="Location" id="Location">
+    </div>
+
+    <div class="flex gap-10 justify-between">
+      <label for="No. of Bedrooms">No. of Bedrooms</label>
+      <input type="text" name="No. of Bedrooms" id="No. of Bedrooms">
+    </div>
+ 
+    <div class="flex gap-10 justify-between">
+      <label for="Resale">Resale</label>
+    <input type="text" name="Resale" id="Resale">
+    </div>
+    
+    <div class="flex gap-10 justify-between">
+      <label for="MaintenanceStaff">MaintenanceStaff</label>
+    <input type="text" name="MaintenanceStaff" id="MaintenanceStaff">
+    </div>
+   
+    <div class="flex gap-10 justify-between">
+      <label for="Gymnasium">Gymnasium</label>
+    <input type="text" name="Gymnasium" id="Gymnasium">
+    </div>
+  
+    <div class="flex gap-10 justify-between">
+      <label for="SwimmingPool">SwimmingPool</label>
+    <input type="text" name="SwimmingPool" id="SwimmingPool">
+    </div>
+   
+    <div class="flex gap-10 justify-between">
+      <label for="ShoppingMall">ShoppingMall</label>
+    <input type="text" name="ShoppingMall" id="ShoppingMall">
+    </div>
+   
+    <div class="flex gap-10 justify-between">
+      <label for="SportsFacility">SportsFacility</label>
+    <input type="text" name="SportsFacility" id="SportsFacility">
+    </div>
+   
+    <div class="flex gap-10 justify-between">
+      <label for="School">School</label>
+    <input type="text" name="School" id="School">
+    </div>
+    
+    <div class="flex gap-10 justify-between">
+      <label for="24X7Security">24X7Security</label>
+    <input type="text" name="24X7Security" id="24X7Security">
+    </div>
+    
+    <div class="flex gap-10 justify-between">
+      <label for="CarParking">CarParking</label>
+    <input type="text" name="CarParking" id="CarParking">
+    </div>
+   
+    <div class="flex gap-10 justify-between">
+      <label for="StaffQuarter">StaffQuarter</label>
+    <input type="text" name="StaffQuarter" id="StaffQuarter">
+    </div>
+    
+    <div class="flex gap-10 justify-between">
+      <label for="Cafeteria">Cafeteria</label>
+    <input type="text" name="Cafeteria" id="Cafeteria">
+    </div>
+   
+    <div class="flex gap-10 justify-between">
+      <label for="Hospital">Hospital</label>
+    <input type="text" name="Hospital" id="Hospital">
+    </div>
+   
+    <div class="flex gap-10 justify-between">
+      <label for="LiftAvailable">LiftAvailable</label>
+    <input type="text" name="LiftAvailable" id="LiftAvailable">
+    </div>
+ 
+    <div class="flex gap-10 justify-between">
+      <label for="Furnished">Furnished</label>
+    <input type="text" name="Furnished" id="Furnished">
+    </div>
+   
+    <button type="submit" class='bg-[#171717] text-white font-semibold px-6 py-2 rounded-lg hover:bg-gray-800'>Predict</button>
+</form>
+</body>
+</html>
